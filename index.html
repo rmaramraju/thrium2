@@ -55,11 +55,8 @@
     </style>
     <style>
         
-        .text-blk {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+       .text-blk {
+  margin: 0;
   line-height: 25px;
 }
 
@@ -69,21 +66,15 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 0px;
-  margin-right: auto;
-  margin-bottom: 0px;
-  margin-left: auto;
   justify-content: center;
+  align-items: center;
 }
 
 .container-block {
   min-height: 75px;
   height: fit-content;
   width: 100%;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  padding: 10px;
   display: block;
 }
 
@@ -96,40 +87,30 @@
   line-height: 50px;
   font-weight: 900;
   text-align: center;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 70px;
-  margin-left: 0px;
+  margin: 0;
   transition: transform 0.5s ease;
 }
 
 .name {
   font-size: 18px;
-  margin-top: 11px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  margin: 11px 0 0 0;
   font-weight: 700;
   align-items: center;
   justify-content: center;
 }
 
 .position {
-  margin-top: 5px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
+  margin: 5px 0 0 0;
   align-items: center;
   justify-content: center;
 }
 
 .team-card-container {
   width: 263px;
-  margin-top: 0px;
-  margin-right: 15px;
-  margin-bottom: 30px;
-  margin-left: 15px;
+  margin: 0 15px 30px;
   transition: transform 0.5s ease;
+  opacity: 0;
+  transform: translateY(30px);
 }
 
 .teamcard-container {
@@ -137,10 +118,8 @@
 }
 
 .team-img-wrapper {
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-bottom-left-radius: 6px;
+  border-radius: 6px;
+  overflow: hidden;
   transition: transform 0.5s ease;
 }
 
@@ -151,21 +130,15 @@
 
 @media (max-width: 500px) {
   .team-card-container {
-    margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 30px;
-    margin-left: 0px;
+    margin: 0;
     width: 100%;
-    justify-content: center;
-      align-items: center;
   }
 
   .team-img {
     width: 100%;
-    align-items:center;
-
   }
 }
+
     </style>
 </head>
 
